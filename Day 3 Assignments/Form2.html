@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Form Submission</title>
+    </head>
+    <style>
+        body {
+          background-image: url('pizza.jpg');
+          background-size: 1200px;
+        }
+        .upper
+        {
+            text-align: center;
+            background-color:rgb(214, 111, 111); 
+            font-size: large;
+            float: left;
+            width: 600px;
+            border: 0px;
+            margin-bottom: 0px;
+            margin: 0px;
+        }
+        .lower{
+            text-align: left;
+            background-color:rgb(94, 95, 98); 
+            width: 580px;
+            border: 0px;
+            margin: 0px;
+            padding: 10px;
+            opacity: 0.9;
+            margin-top: 5px;
+            
+        }
+        </style>
+    <body>
+        
+        <div class="upper">
+            <p >WELCOME TO ITALIAN PIZZA</p>
+            <p style="font-size: small;">We deliver pizza in 40 minutes max. If not - Pizza's on us</p>
+        </div>
+        <br/><br/><br/><br/>
+        <form class="lower">
+            <label>Email</label><br/>
+            <input type="text"><br/><br/>
+            <label>Phone</label><br/>
+            <input type="text" placeholder="Area" size="4">
+            <input type="text" placeholder="Local" size="4">
+            <input type="text" placeholder="Local" size="4"><br/><br/>
+            <label>Number of Slices</label><br/>
+            <input type="text"><br/><br/>
+            <label>Pizza size</label><br/>
+            <input type="radio" name="r1"/>
+            <label>8-inch  </label>
+            <input type="radio" name="r1"/>
+            <label>8-inch  </label>
+            <input type="radio" name="r1"/>
+            <label>8-inch  </label>
+            <input type="radio" name="r1"/>
+            <label>8-inch  </label>
+            <br/><br/>
+            <label>Toppings</label><br/>
+            <input type="checkbox" />
+            <label>Pepperoni </label>
+            <input type="checkbox" />
+            <label>Onion </label>
+            <input type="checkbox" />
+            <label>Mushroom </label>
+            <input type="checkbox" />
+            <label>Sausage </label><br/><br/>
+            <input type="checkbox" required="true"/>
+            <label>I agree to the terms & conditions</label><br/><br/><br/>
+            <input type="submit" value="Order now" style="text-align: center; font-size:medium"/>
+
+
+        </form>
+    </body>
+</html>
