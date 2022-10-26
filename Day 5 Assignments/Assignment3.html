@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            #div1, #div2
+			{
+				border:3px solid Blue;
+				border-radius  :  10px;
+				padding: 5px;
+				width: 550px;
+				height: 130px;			
+				text-align: center;				
+			}
+        </style>
+    </head>
+    <body>
+        <h1>Drag and Drop</h1>
+        <hr/>
+        <div id="div1" style="background-color: aqua;">
+            <img src="Ipad.png" width="70" height="70" id="img1" draggable="true"
+            ondragstart="fn_drag(event)"/>
+            <img src="Iphone.png" width="70" height="70" id="img2" draggable="true"
+            ondragstart="fn_drag(event)"/>
+            <img src="MAC.png" width="70" height="70" id="img3" draggable="true"
+            ondragstart="fn_drag(event)"/>
+        </div><br/><br/>
+        <div id="div2" style="background-color:pink;" ondrop="fn_drop(event)" ondragover="fn_dragOver(event)"></div>
+        <script>
+            var selectedId=""
+            function fn_drag(event) 
+		{  			
+			selectedId  =  event.target.id ;
+		}	
+		function fn_dragOver(event) 
+		{
+			 event.preventDefault();
+		}
+
+		function fn_drop(event) 
+		{
+			event.preventDefault();
+			var  obj  =  document.getElementById(selectedId);
+			event.target.appendChild( obj );			
+		}	
+        </script>
+    </body>
+</html>

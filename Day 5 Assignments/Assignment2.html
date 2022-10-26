@@ -1,0 +1,33 @@
+<html  >
+	<head> </head>
+	<body>
+	<h3>Graphics in HTML5 - Using </h3>
+		<hr/>	 
+		
+		<input type="button"  onclick="fn_draw()"  value="Draw Graphics" />
+		<br/> <br/>
+		
+		<canvas  id="canvas1"  width="300"  height="300"  style="border: 1px solid blue;">
+		</canvas>
+		
+		<script>		 		
+			function  fn_draw()
+			{
+			var  obj =  document.getElementById("canvas1");
+			var  ctx   =  obj.getContext("2d");	
+			
+			var ar = [100, 50, 200, 70, 100, 40, 50];
+			var x = 10, y = 10, h = 30;
+			for(var i = 0; i < 7; i++)
+			{
+				ctx.beginPath();
+				ctx.fillStyle = "Green";
+				ctx.fillRect(x,y, ar[i], h);	
+				
+				y = y + 40;
+			}	
+		 
+			}
+		</script>				
+	</body>	
+</html>
