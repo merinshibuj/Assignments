@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>
+            Get Total
+        </title>
+    </head>
+    <body>
+            <label>Product Name : </label>
+            <input type="text" value="Printer"/>
+            <br/>
+            <br/>
+            <label>Unit Price : </label>
+            <input type="number" value="2500" id="up1"/>
+            <br/>
+            <br/>
+            <label>Quantity : </label>
+            <input type="number" value=3 id="qua">
+            <br/>
+            <br/>
+            <input type="button" value="Get Total" onclick="get_val()" >
+            <br/><br/>
+            <p id="para"></p>
+   
+    <script>
+        function get_val()
+        {
+            let upObj = document.getElementById("up1");
+            console.log(upObj);
+            var qu = document.getElementById("qua");
+            var paraobj = document.getElementById("para");
+            var total1 = upObj.value * qu.value;
+
+           // console.log(typeof(upObj));
+            paraobj.innerHTML = total1;
+        }
+    </script>
+     </body>
+</html>

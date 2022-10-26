@@ -1,0 +1,21 @@
+<html>
+    <head>
+        Working with JavaScript
+    </head>
+    <hr/>
+    <label>User Name: </label><br/>
+    <input type="text" id="t1"/>
+    <br/><br/>
+    <input type="button" value="get message" onclick="fn_getmsg()" />
+    <br/><br/>
+    <p id="p1"> </p>
+    <script>
+        function fn_getmsg()
+        {
+            var textobj = document.getElementById("t1");
+            var paraObj = document.getElementById("p1");
+
+            paraObj.innerText = "Welcome to Deloitte, "+ textobj.value;
+        }
+    </script>
+</html>
